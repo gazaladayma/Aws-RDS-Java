@@ -16,3 +16,20 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+# Local environment variables
+.env
+
+# Local JSP backups
+*.backup
+
+# AWS CLI installer files
+aws/
+awscliv2.zip
+
+# Maven build output
+target/
+
+# Terraform plan files
+*.tfplan
+tfplan
