@@ -19,13 +19,13 @@ variable "db_name" {
 variable "db_username" {
   description = "Master username for the RDS database"
   type        = string
-  default     = "appadmin"
+  default     = "admin"
 }
 
 variable "db_instance_class" {
   description = "RDS instance class"
   type        = string
-  default     = "db.t3.micro"
+  default     = "db.t4g.micro"
 }
 
 variable "db_allocated_storage" {
