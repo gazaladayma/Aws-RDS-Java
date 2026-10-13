@@ -1,6 +1,15 @@
 terraform {
   required_version = ">= 1.5.0"
 
+  backend "s3" {
+    bucket       = "gazaldevops-tfstate-820242917252"
+    key          = "aws-rds-java/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+    profile      = "terraform-user"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
